@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+.text-decoration {
+    text-decoration: none;
+}
+.ant-menu-submenu-title {
+ font-size: 1rem !important;
+}
+.ant-menu-title-content {
+color: white !important;
+font-weight: 450;
+}
+.ant-menu-item-selected {
+&::after {
+    content: "";
+    border-bottom-color: white !important;
+}
+
+}
+.ant-menu-item-active {
+    &::after{
+    content: "";
+    border-bottom-color:white !important ;
+    }
+    &:hover {
+        border-bottom-color:white !important ;
+    }
+}
+}

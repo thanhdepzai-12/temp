@@ -1,0 +1,23 @@
+.ant-modal-content {
+    height:15rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .ant-btn-default {
+        border-color: #FFCC00;
+        color: #FFCC00;
+        opacity: 0.5;
+        &:hover {
+            border-color: #FFCC00 !important;
+            color: #FFCC00 !important;
+            opacity: 1;
+        }
+    }
+    .ant-btn-primary {
+        background-color: #FFCC00;
+        color: white;
+        &:hover {
+            background-color: #e8ba00 !important;
+        }
+    }
+} 

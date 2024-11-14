@@ -1,0 +1,83 @@
+.HomePages-container  {
+    width: 100%;
+    height:calc(100vh - 63px);
+background: url('../../assets/hpimage.png') center/cover;
+
+    .main-homepage {
+        height: 100%;
+        padding-left: 5rem;
+        padding-top: 3rem;
+
+       h3 {
+                color:#FFCC00;
+        font-size: 2.5rem;
+        text-shadow: 3px 0px 12px rgba(255,204,0,0.91);
+        opacity: 1;
+        animation: 2s appear linear;
+transition: .5s linear;
+    }
+    @keyframes appear {
+        0% {
+            opacity: 1;
+            transition: .5s linear;
+        }25% {
+            opacity: 0.5;
+            transition: .5s linear;
+        }50% {
+            opacity: 0.3;
+            transition: .5s linear;
+        }75% {
+            opacity: 0.1;
+            transition: .5s linear;
+        }100% {
+            opacity: 1;
+            transition: .5s linear;
+        }
+    }
+    h2 {
+ opacity: 1;
+animation: 2s appear  linear;
+transition: .5s linear;
+color:#FFCC00;
+font-size: 2.5rem;
+text-shadow: 3px 0px 12px rgba(255,204,0,0.91);
+    }
+    
+.logo-container {
+  position: relative;
+  
+  &:before {
+    content:  "";
+    position: absolute;
+    top:      calc( 100% - 2px );
+    width:    30rem;
+    height:   4px;
+    background-color: #064420;
+    transform-origin: center center;
+    transform: scaleX( 0 );
+    
+    animation: line-animation 3s ease  alternate;
+  }
+  
+  h1#page-logo {
+    font: bold 5rem 'Arial', sans-serif;
+    color: #064420;
+    animation: clip-path-reveal-1 3s ease alternate;
+  }
+}
+
+@keyframes line-animation {
+  0% { transform: scaleX( 0 ); }
+  15% { transform: scaleX( 0 ); }
+  20%, 25% { transform: scaleX( 1 ); top: calc( 100% - 2px ); }
+  50% { transform: scaleX( 1 ); top: 0px; }
+  70% { transform: scaleX( 0.2 ); top: 0px; }
+  80%, 100% { transform: scaleX( 0.2 ); top: 0px; }
+}
+
+@keyframes clip-path-reveal-1 {
+  0%, 25% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+  50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+}
+}
+}
